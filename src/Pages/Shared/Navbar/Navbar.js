@@ -29,7 +29,7 @@ const Navbar = () => {
     </React.Fragment>
 
     return (
-        <div className='flex justify-between items-center px-[105px] pt-[36px]  mx-auto bg-primary text-white opacity-95'>
+        <div className='flex justify-between items-center px-[105px] pt-[36px]  mx-auto bg-primary text-white opacity-90'>
             <div className='pl-[15px]'>
                 <Link to='/' className='text-base'><img src={logo} alt="" /></Link>
             </div>
