@@ -1,13 +1,13 @@
 import React from 'react';
-import logoDesign from '../../../assets/images/logo-design.png';
-import reports from '../../../assets/images/reports (1).png';
-import ebooks from '../../../assets/images/ebooks.png';
-import socialMedia from '../../../assets/images/social-media.png';
-import illustrations from '../../../assets/images/illustrations.png';
-import infographics from '../../../assets/images/infographics.png';
-import email from '../../../assets/images/email.png';
-import printed from '../../../assets/images/printed.png';
-import presentations from '../../../assets/images/presentations.png';
+import logoDesign from '../../../assets/images/Services/logo-design.png';
+import reports from '../../../assets/images/Services/reports (1).png';
+import ebooks from '../../../assets/images/Services/ebooks.png';
+import socialMedia from '../../../assets/images/Services/social-media.png';
+import illustrations from '../../../assets/images/Services/illustrations.png';
+import infographics from '../../../assets/images/Services/infographics.png';
+import email from '../../../assets/images/Services/email.png';
+import printed from '../../../assets/images/Services/printed.png';
+import presentations from '../../../assets/images/Services/presentations.png';
 import ServiceCard from '../ServiceCard/ServiceCard';
 
 const Services = () => {

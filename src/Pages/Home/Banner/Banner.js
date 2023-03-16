@@ -2,7 +2,7 @@ import React from 'react';
 
 const Banner = () => {
     return (
-            <div className="min-h-[780px] bg-[url('/src/assets/images/cup-coffee-table.jpg')] bg-fixed bg-center bg-no-repeat bg-cover 
+            <div className="min-h-[780px] bg-[url('/src/assets/images/Banner/cup-coffee-table.jpg')] bg-fixed bg-center bg-no-repeat bg-cover 
              -mt-[74px] text-center">
             <div className='bg-primary absolute top-[73px] opacity-90 pt-[115px] px-[244px] pb-[187px]'>
                 <h3 className='text-white text-[27px] font-extralight leading-[70px]'>
