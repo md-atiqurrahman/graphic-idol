@@ -15,14 +15,15 @@ module.exports = {
           accent: "#d8edfe",
 
           neutral: "#000000",
-
-          base: "#FFFFFF",
         },
       },
     ],
   },
   theme: {
     extend: {
+      boxShadow: {
+        cxl: '0 3px 40px rgba(36, 36, 36, .1)'
+      },
       backgroundImage: {
         'bg-banner1': "url('/src/assets/images/cup-coffee-table.jpg')",
         'bg-banner2': "url('/src/images/Banner/DrillMachine.jpg')"
