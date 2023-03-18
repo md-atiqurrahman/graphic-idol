@@ -1,9 +1,43 @@
 import React from "react";
 import img1 from '../../../assets/images/Portfolio/1.jpg';
+import img2 from '../../../assets/images/Portfolio/2.jpg';
+import img3 from '../../../assets/images/Portfolio/3.jpg';
+import img4 from '../../../assets/images/Portfolio/4.jpg';
+import img5 from '../../../assets/images/Portfolio/5.jpg';
+import img6 from '../../../assets/images/Portfolio/6.jpg';
+import ImageFlipBox from "../ImageFlipBox/ImageFlipBox";
 import './Portfolio.css';
 
 
 const Portfolio = () => {
+
+    const images = [
+        {
+            id: 1,
+            image: img1
+        },
+        {
+            id: 2,
+            image: img2
+        },
+        {
+            id: 3,
+            image: img3
+        },
+        {
+            id: 4,
+            image: img4
+        },
+        {
+            id: 5,
+            image: img5
+        },
+        {
+            id: 6,
+            image: img6
+        }
+    ]
+
     return (
         <div className="text-center mt-[115px]">
             <h1 className="text-black text-[46px] font-bold leading-[70px]">Portfolio</h1>
@@ -11,19 +45,16 @@ const Portfolio = () => {
                 <p>We don't promise quality without proof. Browse our work</p>
                 <p>below to get an idea of what we can do.</p>
             </div>
-            <div className="mb-[55px] ml-[200px]">
-                <div className="relative">
-                    <img className="w-[350px] h-[400px]" src={img1} alt="" />
-                    <div class="flip-box">
-                        <div class="flip-box-inner">
-                            <div class="flip-box-front">
-                            </div>
-                            <div class="flip-box-back">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div className="mb-[55px] flex flex-row flex-wrap justify-center gap-[30px]">
+                  {
+                    images.map(image => <ImageFlipBox
+                    key={image.id}
+                    image={image.image}
+                    >
+                    </ImageFlipBox>)
+                  }
             </div>
+            <div className='w-[203px] px-[44px] py-[20px] bg-secondary mx-auto rounded-[50px] text-white text-[18px] font-semibold cursor-pointer hover:bg-primary'>View Gallery</div>
         </div>
     )
 }
