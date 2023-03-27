@@ -7,7 +7,7 @@ const Footer = () => {
 
     return (
         <div className='flex justify-between items-center bg-primary px-[120px] py-[35px]'>
-            <h6 className='text-white text-[16px] font-normal leading-[24px]'>© {year} Graphic Mart All Rights Reserved</h6>
+            <h6 className='text-white text-[16px] font-normal leading-[24px]'>© {year} Graphic Idol All Rights Reserved</h6>
             <div className='flex items-center gap-[24px] text-[#B0B0B0] font-normal leading-[1]'>
                 <span className='hover:text-secondary cursor-pointer'>
                     <FaBehance></FaBehance>

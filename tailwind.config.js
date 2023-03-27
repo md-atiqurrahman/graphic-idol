@@ -20,6 +20,10 @@ module.exports = {
     ],
   },
   theme: {
+    fontFamily:{
+      Poppins: ['Poppins', 'sans-serif'],
+      MerriWeather: ['Merriweather','serif']
+    },
     extend: {
       boxShadow: {
         cxl: '0 3px 40px rgba(36, 36, 36, .1)'
