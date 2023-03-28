@@ -1,10 +1,10 @@
 import React from "react";
-import img1 from '../../../assets/images/Portfolio/1.jpg';
+import img1 from '../../../assets/images/Portfolio/1.png';
 import img2 from '../../../assets/images/Portfolio/2.jpg';
 import img3 from '../../../assets/images/Portfolio/3.jpg';
-import img4 from '../../../assets/images/Portfolio/4.jpg';
+import img4 from '../../../assets/images/Portfolio/4.png';
 import img5 from '../../../assets/images/Portfolio/5.jpg';
-import img6 from '../../../assets/images/Portfolio/6.jpg';
+import img6 from '../../../assets/images/Portfolio/6.png';
 import ImageFlipBox from "../ImageFlipBox/ImageFlipBox";
 import './Portfolio.css';
 
