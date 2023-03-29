@@ -1,3 +1,5 @@
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState, useEffect } from 'react';
 import {  IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io";
 import quatation from '../../../assets/icons/quote.svg';
@@ -46,22 +48,26 @@ const ClientsReviews = () => {
             <h1 className="text-black text-[46px] font-bold leading-[70px] mb-[50px]">What They Say About Graphic Idol</h1>
             <div className="flex flex-col items-center">
                 <div className="flex items-center">
-                    <button onClick={handlePrev} className="text-lg text-gray-600 hover:text-gray-800 focus:outline-none">
-                        <IoIosArrowDropleft size={35} />
+                    <button onClick={handlePrev} className="w-[38px] h-[38px] 
+                    border border-[#676767] rounded-[50px] text-lg text-[#676767] hover:text-gray-800 focus:outline-none">
+                    <FontAwesomeIcon icon={faChevronLeft} />
                     </button>
                     <div className="relative mx-4">
                         <div className="absolute top-0 bottom-0 left-0 right-0">
                             <div className="bg-gradient-to-b from-transparent to-white h-4/5"></div>
                         </div>
-                        <div className="w-[680px] h-[310px] px-8 py-6 bg-white rounded-lg shadow-lg relative overflow-hidden flex flex-col justify-center">
+                        <div className="w-[680px] h-[310px] px-8 py-6 bg-white rounded-lg shadow-lg relative overflow-hidden flex flex-col justify-center z-10">
                             <img className='w-[128px] absolute top-0' src={quatation} alt="" />
                             <div className="text-[#676767] text-[18px] font-medium leading-[27px] mb-4">{reviews[currentReview].text}</div>
                             <div className="text-[#FF4040] text-[20px] font-medium leading-[30px]">{reviews[currentReview].name}</div>
                             <div className="text-gray-600 text-sm">{reviews[currentReview].occupation}</div>
                         </div>
+                        <div className="w-[640px] h-[310px] px-8 py-6 bg-white rounded-lg shadow-lg absolute top-[20px] z-[1] overflow-hidden ml-[20px]"></div>
+                        <div className="w-[600px] h-[310px] px-8 py-6 bg-white rounded-lg shadow-lg absolute top-[40px] z-0 overflow-hidden ml-[40px]"></div>
                     </div>
-                    <button onClick={handleNext} className="text-lg text-gray-600 hover:text-gray-800 focus:outline-none">
-                        <IoIosArrowDropright size={35} />
+                    <button onClick={handleNext} className="w-[38px] h-[38px] 
+                    border border-[#676767] rounded-[50px] text-lg text-[#676767] hover:text-gray-800 focus:outline-none">
+                    <FontAwesomeIcon icon={faChevronRight} />
                     </button>
                 </div>
             </div>
