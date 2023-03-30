@@ -1,10 +1,32 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import './Contacts.css';
 import emailjs from '@emailjs/browser';
+import Select from "react-select";
 
 
 const Contacts = () => {
+    const [selectedOptions, setSelectedOptions] = useState();
     const form = useRef();
+
+    const optionList = [
+        { value: "Logo Design", label: "Logo Design" },
+        { value: "Brand Style Guides", label: "Brand Style Guides" },
+        { value: "Company Folder", label: "Company Folder" },
+        { value: "Business Cards", label: "Business Cards" },
+        { value: "Letterhead", label: "Letterhead" },
+        { value: "Envelope", label: "Envelope" },
+        { value: "Pattern Design", label: "Pattern Design" },
+        { value: "Social Media Kit", label: "Social Media Kit" },
+        { value: "Social Post Design", label: "Social Post Design" },
+        { value: "Banner", label: "Banner" },
+        { value: "Book Cover", label: "Book Cover" },
+        { value: "Email Template", label: "Email Template" },
+        { value: "Vector Tracing", label: "Vector Tracing" }
+    ];
+
+    const handleSelect = (data) => {
+        setSelectedOptions(data);
+    }
 
     const sendMail = (e) => {
         e.preventDefault();
@@ -37,40 +59,17 @@ const Contacts = () => {
                                 <input name='user_email' type="email" required placeholder="Your Email" className="input h-[60px] rounded-[5px] bg-[#fafafa] focus:bg-white" />
                             </div>
                             <div className="form-control mb-[8px]">
-                                <select name='service' required className="select  w-full font-normal">
-                                    <option value='' selected>
-                                        Which service do you need?
-                                    </option>
-                                    <option value='Logo Design'>Logo Design</option>
-                                    <option value='Brand Style Guides'>
-                                        Brand Style Guides
-                                    </option>
-                                    <option value='Company Folder'>
-                                        Company Folder
-                                    </option>
-                                    <option value='Business Cards'>
-                                        Business Cards
-                                    </option>
-                                    <option value='Letterhead'>Letterhead</option>
-                                    <option value='Envelope'>Envelope</option>
-                                    <option value='Pattern Design'>
-                                        Pattern Design
-                                    </option>
-                                    <option value='Social Media Kit'>
-                                        Social Media Kit
-                                    </option>
-                                    <option value='Social Post Design'>
-                                        Social Post Design
-                                    </option>
-                                    <option value='Banner'>Banner</option>
-                                    <option value='Book Cover'>Book Cover</option>
-                                    <option value='Email Template'>
-                                        Email Template
-                                    </option>
-                                    <option value='Vector Tracing'>
-                                        Vector Tracing
-                                    </option>
-                                </select>
+                                <div className=" focus:border-none">
+                                    <Select
+                                        options={optionList}
+                                        placeholder="Which service do you need?"
+                                        value={selectedOptions}
+                                        onChange={handleSelect}
+                                        isSearchable={true}
+                                        isMulti
+                                        required
+                                    />
+                                </div>
                             </div>
                             <div className="form-control mb-[8px]">
                                 <textarea name='message' required className="textarea h-[140px] rounded-[5px] bg-[#fafafa] py-0 align-top" placeholder="Message"></textarea>
