@@ -1,26 +1,10 @@
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { useState, useEffect } from 'react';
-import {  IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io";
-import quatation from '../../../assets/icons/quote.svg';
+import React, { useState, useEffect, useCallback } from 'react';
+import quote from '../../../assets/icons/quote.svg';
 
 const ClientsReviews = () => {
     const [currentReview, setCurrentReview] = useState(0);
-
-    const handleNext = () => {
-        setCurrentReview(currentReview === reviews.length - 1 ? 0 : currentReview + 1);
-    };
-
-    const handlePrev = () => {
-        setCurrentReview(currentReview === 0 ? reviews.length - 1 : currentReview - 1);
-    };
-
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            handleNext();
-        }, 5000);
-        return () => clearTimeout(timer);
-    }, [currentReview, handleNext]);
 
     const reviews = [
         {
@@ -43,6 +27,22 @@ const ClientsReviews = () => {
         }
     ];
 
+    const handleNext = useCallback(() => {
+        setCurrentReview(currentReview => currentReview === reviews.length - 1 ? 0 : currentReview + 1);
+    }, [setCurrentReview, reviews.length]);
+
+    const handlePrev = () => {
+        setCurrentReview(currentReview === 0 ? reviews.length - 1 : currentReview - 1);
+    };
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            handleNext();
+        }, 5000);
+        return () => clearTimeout(timer);
+    }, [currentReview, handleNext]);
+
+
     return (
         <div className='text-center mb-[185px]'>
             <h1 className="text-black text-[46px] font-bold leading-[70px] mb-[50px]">What They Say About Graphic Idol</h1>
@@ -50,14 +50,14 @@ const ClientsReviews = () => {
                 <div className="flex items-center">
                     <button onClick={handlePrev} className="w-[38px] h-[38px] 
                     border border-[#676767] rounded-[50px] text-lg text-[#676767] hover:text-gray-800 focus:outline-none">
-                    <FontAwesomeIcon icon={faChevronLeft} />
+                        <FontAwesomeIcon icon={faChevronLeft} />
                     </button>
                     <div className="relative mx-4">
                         <div className="absolute top-0 bottom-0 left-0 right-0">
                             <div className="bg-gradient-to-b from-transparent to-white h-4/5"></div>
                         </div>
                         <div className="w-[680px] h-[310px] px-8 py-6 bg-white rounded-lg shadow-lg relative overflow-hidden flex flex-col justify-center z-10">
-                            <img className='w-[128px] absolute top-0' src={quatation} alt="" />
+                            <img className='w-[128px] absolute top-0' src={quote} alt="quote" />
                             <div className="text-[#676767] text-[18px] font-medium leading-[27px] mb-4">{reviews[currentReview].text}</div>
                             <div className="text-[#FF4040] text-[20px] font-medium leading-[30px]">{reviews[currentReview].name}</div>
                             <div className="text-gray-600 text-sm">{reviews[currentReview].occupation}</div>
@@ -67,7 +67,7 @@ const ClientsReviews = () => {
                     </div>
                     <button onClick={handleNext} className="w-[38px] h-[38px] 
                     border border-[#676767] rounded-[50px] text-lg text-[#676767] hover:text-gray-800 focus:outline-none">
-                    <FontAwesomeIcon icon={faChevronRight} />
+                        <FontAwesomeIcon icon={faChevronRight} />
                     </button>
                 </div>
             </div>

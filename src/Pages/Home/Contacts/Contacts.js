@@ -33,12 +33,13 @@ const Contacts = () => {
 
         emailjs.sendForm('service_7ul5kra', 'template_mtsfx5r', form.current, 'CgK1RkWuOLQ5gqBPe')
             .then((result) => {
-                console.log(result.text);
+                // console.log(result.text);
             }, (error) => {
-                console.log(error.text);
+                // console.log(error.text);
             });
 
         e.target.reset();
+        setSelectedOptions('');
     }
 
     return (
@@ -59,8 +60,9 @@ const Contacts = () => {
                                 <input name='user_email' type="email" required placeholder="Your Email" className="input h-[60px] rounded-[5px] bg-[#fafafa] focus:bg-white" />
                             </div>
                             <div className="form-control mb-[8px]">
-                                <div className=" focus:border-none">
+                                <div className="focus:border-none">
                                     <Select
+                                        name='service'
                                         options={optionList}
                                         placeholder="Which service do you need?"
                                         value={selectedOptions}
@@ -72,7 +74,7 @@ const Contacts = () => {
                                 </div>
                             </div>
                             <div className="form-control mb-[8px]">
-                                <textarea name='message' required className="textarea h-[140px] rounded-[5px] bg-[#fafafa] py-0 align-top" placeholder="Message"></textarea>
+                                <textarea name='message' required className="textarea h-[140px] rounded-[5px] bg-white py-0 align-top" placeholder="Message"></textarea>
                             </div>
                             {/* <div className="form-control mb-[8px]">
                                 <input type="file" className="rounded-[4px] bg-[#fafafa] h-[46px] p-2" placeholder="Choose Files" accept=".tiff,.jpeg,.jpg,.gif,.png,.pdf,.psd,.ai,.eps,.dwg,.zip,.svg,.mp4,.avi" multiple />

@@ -6,6 +6,7 @@ import OurSpeciality from '../OurSpeciality/OurSpeciality';
 import Portfolio from '../Portfolio/Portfolio';
 import Services from '../Services/Services';
 import Contacts from '../../Home/Contacts/Contacts';
+import WhatsApp from '../../Shared/WhatsApp/WhatsApp';
 
 const Home = () => {
     return (
@@ -17,6 +18,7 @@ const Home = () => {
             <OurSpeciality></OurSpeciality>
             <ClientsReviews></ClientsReviews>
             <Contacts></Contacts>
+            <WhatsApp></WhatsApp>
         </div>
     );
 };
