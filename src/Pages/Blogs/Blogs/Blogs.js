@@ -5,7 +5,7 @@ const Blogs = () => {
     return (
         <div>
             <Navbar></Navbar>
-            <h1 className='text-center text-black'>This is blogs section...</h1>
+            <h1 className='text-black text-center'>Coming soon...</h1>
         </div>
     );
 };

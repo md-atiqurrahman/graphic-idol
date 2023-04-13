@@ -5,7 +5,7 @@ import FeedbackVideo from '../FeedbackVideo/FeedbackVideo';
 import OurSpeciality from '../OurSpeciality/OurSpeciality';
 import Portfolio from '../Portfolio/Portfolio';
 import Services from '../Services/Services';
-import Contacts from '../../Home/Contacts/Contacts';
+import ContactForm from '../ContactForm/ContactForm';
 import WhatsApp from '../../Shared/WhatsApp/WhatsApp';
 
 const Home = () => {
@@ -17,7 +17,7 @@ const Home = () => {
             <FeedbackVideo></FeedbackVideo>
             <OurSpeciality></OurSpeciality>
             <ClientsReviews></ClientsReviews>
-            <Contacts></Contacts>
+            <ContactForm></ContactForm>
             <WhatsApp></WhatsApp>
         </div>
     );

@@ -1,10 +1,10 @@
 import React, { useRef, useState } from 'react';
-import './Contacts.css';
+import './ContactForm.css';
 import emailjs from '@emailjs/browser';
 import Select from "react-select";
 
 
-const Contacts = () => {
+const ContactForm = () => {
     const [selectedOptions, setSelectedOptions] = useState();
     const form = useRef();
 
@@ -43,7 +43,7 @@ const Contacts = () => {
     }
 
     return (
-        <section id='contacts' className='bg-[#d8edfe] pt-[100px] text-black h-[620px]'>
+        <section id='contacts' className='bg-[#d8edfe] pt-[100px]  text-black h-[642px]'>
             <div className='pl-[120px] pr-[175px] flex items-start gap-[210px]'>
                 <div>
                     <h2 className='text-[46px] leading-[70px] font-bold'>Let's Chat</h2>
@@ -88,4 +88,4 @@ const Contacts = () => {
     );
 };
 
-export default Contacts;
+export default ContactForm;

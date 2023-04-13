@@ -1,0 +1,18 @@
+.whatsapp-text{
+    visibility: hidden;
+}
+.whatsapp-container:hover .whatsapp-text {
+    visibility: visible;
+    animation: slideInRight 0.5s forwards;
+  }
+  
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+    }
+  
+    to {
+      transform: translateX(0);
+    }
+  }
+  

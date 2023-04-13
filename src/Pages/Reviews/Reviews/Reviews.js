@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../../Shared/Navbar/Navbar';
 
-const Login = () => {
+const Reviews = () => {
     return (
         <div>
             <Navbar></Navbar>
@@ -10,4 +10,4 @@ const Login = () => {
     );
 };
 
-export default Login;
+export default Reviews;

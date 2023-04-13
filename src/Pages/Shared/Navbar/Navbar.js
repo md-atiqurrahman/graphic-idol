@@ -25,7 +25,7 @@ function Navbar() {
             <Link to='/pricing'>Pricing</Link>
         </li>
         <li className='px-[15px] hover:text-secondary'>
-            <Link to='/Blogs'>Blogs</Link>
+            <Link to='/blogs'>Blogs</Link>
         </li>
         <li className='px-[15px] hover:text-secondary'>
             <Link to='/reviews'>Reviews</Link>
