@@ -11,7 +11,7 @@ const OurSpeciality = () => {
                 <br />
                 Coming Back
             </h1>
-            <div className='flex justify-center items-center gap-[30px]'>
+            <div className='flex justify-center items-center gap-[30px] flex-wrap'>
                 <div className="card w-[350px] h-[450px] bg-[#1e45c7] shadow-xl text-white rounded-[5px]">
                     <div className='flex justify-center items-center mt-[30px]'>
                         <img src={img1} alt="Communication" className="rounded-xl" />

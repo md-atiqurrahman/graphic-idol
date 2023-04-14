@@ -37,7 +37,7 @@ function Navbar() {
 
 
     return (
-        <div className="navbar bg-primary text-white bg-opacity-90 py-2 px-0 lg:px-[120px] pt-[36px]">
+        <div className="navbar bg-primary text-white bg-opacity-90 py-2 pl-0 lg:pl-[120px] pr-0 lg:pr-[107px] pt-[30px] lg:pt-[36px]">
             <div className="navbar-start pl-[15px] lg:pl-0">
                 <Link to='/'><img src={logo} alt="Graphic Idol logo" /></Link>
             </div>

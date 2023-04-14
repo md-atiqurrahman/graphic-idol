@@ -43,21 +43,21 @@ const ContactForm = () => {
     }
 
     return (
-        <section id='contacts' className='bg-[#d8edfe] pt-[100px]  text-black h-[642px]'>
-            <div className='pl-[120px] pr-[175px] flex items-start gap-[210px]'>
+        <section id='contacts' className='bg-[#d8edfe] pt-[100px]  text-black '>
+            <div className='pl-[120px] pr-[175px] flex items-start flex-col lg:flex-row gap-[210px]'>
                 <div>
                     <h2 className='text-[46px] leading-[70px] font-bold'>Let's Chat</h2>
                     <p className='text-[22px] leading-[32px] font-normal'>We'd love to get to know you, discuss your needs, and create
                         a plan for going forward. Please enter your information in the form below, and we'll contact you as soon as possible.</p>
                 </div>
                 <div>
-                    <form ref={form} onSubmit={sendMail} className='w-[482px] h-auto'>
+                    <form ref={form} onSubmit={sendMail} className='w-full lg:w-[482px] h-auto'>
                         <div className="card-body p-0">
                             <div className="form-control mb-[8px]">
-                                <input type="text" name='user_name' required placeholder="Your Name" className="input h-[60px] rounded-[5px] bg-[#fafafa] focus:bg-white" />
+                                <input type="text" name='user_name' required placeholder="Your Name" className="input h-[60px] rounded-[5px] bg-white focus:bg-white" />
                             </div>
                             <div className="form-control mb-[8px]">
-                                <input name='user_email' type="email" required placeholder="Your Email" className="input h-[60px] rounded-[5px] bg-[#fafafa] focus:bg-white" />
+                                <input name='user_email' type="email" required placeholder="Your Email" className="input h-[60px] rounded-[5px] bg-white focus:bg-white" />
                             </div>
                             <div className="form-control mb-[8px]">
                                 <div className="focus:border-none">
