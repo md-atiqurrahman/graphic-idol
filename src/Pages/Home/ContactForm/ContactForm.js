@@ -43,14 +43,14 @@ const ContactForm = () => {
     }
 
     return (
-        <section id='contacts' className='bg-[#d8edfe] pt-[100px]  text-black '>
-            <div className='pl-[120px] pr-[175px] flex items-start flex-col lg:flex-row gap-[210px]'>
+        <section id='contacts' className='bg-[#d8edfe] pt-[100px] text-black pb-[120px]'>
+            <div className='pl-[15px] lg:pl-[120px] pr-[15px] lg:pr-[175px] flex items-start flex-col lg:flex-row gap-[53px] lg:gap-[210px]'>
                 <div>
                     <h2 className='text-[46px] leading-[70px] font-bold'>Let's Chat</h2>
                     <p className='text-[22px] leading-[32px] font-normal'>We'd love to get to know you, discuss your needs, and create
                         a plan for going forward. Please enter your information in the form below, and we'll contact you as soon as possible.</p>
                 </div>
-                <div>
+                <div className='w-full lg:w-[482px]'>
                     <form ref={form} onSubmit={sendMail} className='w-full lg:w-[482px] h-auto'>
                         <div className="card-body p-0">
                             <div className="form-control mb-[8px]">
@@ -79,7 +79,7 @@ const ContactForm = () => {
                             {/* <div className="form-control mb-[8px]">
                                 <input type="file" className="rounded-[4px] bg-[#fafafa] h-[46px] p-2" placeholder="Choose Files" accept=".tiff,.jpeg,.jpg,.gif,.png,.pdf,.psd,.ai,.eps,.dwg,.zip,.svg,.mp4,.avi" multiple />
                             </div> */}
-                            <input type='submit' value='Send Message' className='w-[203px] px-[30px] py-[17px] bg-secondary rounded-[50px] text-white text-[18px] font-semibold cursor-pointer hover:bg-primary' />
+                            <input type='submit' value='Send Message' className='w-full lg:w-[203px] px-[30px] py-[17px] bg-secondary rounded-[50px] text-white text-[18px] font-semibold cursor-pointer hover:bg-primary' />
                         </div>
                     </form>
                 </div>

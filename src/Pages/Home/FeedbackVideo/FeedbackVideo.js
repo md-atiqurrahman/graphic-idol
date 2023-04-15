@@ -43,7 +43,7 @@ const FeedbackVideo = () => {
             ✕
           </label>
           <iframe
-            className="w-full lg:w-[900px] h-[500px]"
+            className="w-full lg:w-[900px] h-[500px] sm:h-[506px]"
             src={playVideo ? "https://www.youtube.com/embed/SjgSCohAFSc" : "0"}
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

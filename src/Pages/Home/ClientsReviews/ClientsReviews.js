@@ -59,7 +59,7 @@ const ClientsReviews = () => {
           <button
             onClick={handlePrev}
             className="w-[38px] h-[38px] 
-                    border border-[#676767] rounded-[50px] text-lg text-[#676767] hover:text-gray-800 focus:outline-none"
+                    border border-[#676767] rounded-[50px] text-lg text-[#676767] hover:text-gray-800 focus:outline-none absolute lg:relative z-[4] left-0"
           >
             <FontAwesomeIcon icon={faChevronLeft} />
           </button>
@@ -67,9 +67,9 @@ const ClientsReviews = () => {
             <div className="absolute top-0 bottom-0 left-0 right-0">
               <div className="bg-gradient-to-b from-transparent to-white h-4/5"></div>
             </div>
-            <div className="max-w-[320px] lg:max-w-[680px] h-[310px] px-8 py-6 bg-white rounded-lg shadow-lg relative overflow-hidden flex flex-col justify-center z-10">
+            <div className="max-w-xs lg:max-w-[680px] h-[310px] px-8 py-6 bg-white rounded-lg shadow-lg relative overflow-hidden flex flex-col justify-center z-[3]">
               <img
-                className="w-[128px] absolute top-0"
+                className="w-[70px] lg:w-[128px] absolute top-0"
                 src={quote}
                 alt="quote"
               />
@@ -83,17 +83,17 @@ const ClientsReviews = () => {
                 {reviews[currentReview].occupation}
               </div>
             </div>
-            <div className="flex justify-center">
-              <div className="w-[280px] lg:w-[640px] h-[310px] px-8 py-6 bg-white rounded-lg shadow-lg absolute top-[20px] z-[1] overflow-hidden mx-auto"></div>
+            <div className="w-[320px] lg:w-[680px] flex justify-center items-center">
+              <div className="w-[280px] lg:w-[640px] h-[310px] px-8 py-6 bg-white rounded-lg shadow-lg absolute top-[20px] z-[2] overflow-hidden mx-auto"></div>
             </div>
-            <div className="flex justify-center">
-              <div className="w-[240px] lg:w-[600px] h-[310px] px-8 py-6 bg-white rounded-lg shadow-lg absolute top-[40px] z-0 overflow-hidden"></div>
+            <div className="flex justify-center items-center">
+              <div className="w-[240px] lg:w-[600px] h-[310px] px-8 py-6 bg-white rounded-lg shadow-lg absolute top-[40px] z-[1] overflow-hidden"></div>
             </div>
           </div>
           <button
             onClick={handleNext}
             className="w-[38px] h-[38px] 
-                    border border-[#676767] rounded-[50px] text-lg text-[#676767] hover:text-gray-800 focus:outline-none"
+                    border border-[#676767] rounded-[50px] text-lg text-[#676767] hover:text-gray-800 focus:outline-none absolute lg:relative z-[5] right-0"
           >
             <FontAwesomeIcon icon={faChevronRight} />
           </button>

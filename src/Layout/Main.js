@@ -7,7 +7,7 @@ import Footer from "../Pages/Shared/Footer/Footer";
 
 const Main = () => {
   return (
-    <div className="relative pb-[94px] min-h-[100vh]">
+    <div className="relative pb-[91px] lg:pb-[94px] min-h-[100vh]">
       <Outlet></Outlet>
       <Footer></Footer>
     </div>
