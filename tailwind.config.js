@@ -30,7 +30,10 @@ module.exports = {
       },
       backgroundImage: {
         'bg-banner1': "url('/src/assets/images/Banner/cup-coffee-table.jpg')",
-        'bg-banner2': "url('/src/images/Banner/DrillMachine.jpg')"
+        'bg-banner2': "url('/src/images/Banner/DrillMachine.jpg')",
+        'bg-shape1': "url('/src/assets/images/Pricing/LogoDesign/shape-1.png')",
+        'bg-shape2': "url('/src/assets/images/Pricing/LogoDesign/shape-2.png')",
+        'bg-shape3': "url('/src/assets/images/Pricing/LogoDesign/shape-3.png')"
       }
     },
   },

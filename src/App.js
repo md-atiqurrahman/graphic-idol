@@ -3,7 +3,7 @@ import router from './Routes/Routes/Routes';
 
 function App() {
   return (
-    <div className='font-Poppins max-w-[1440px]'>
+    <div className='font-Poppins'>
       <RouterProvider router={router}></RouterProvider>
     </div>
   )
