@@ -1,11 +1,12 @@
 import React from 'react';
-import Navbar from '../../Shared/Navbar/Navbar';
+import PricingBanner from '../PricingBanner/PricingBanner';
+import LogoDesign from '../LogoDesign/LogoDesign';
 
 const Pricing = () => {
     return (
         <div>
-            <Navbar></Navbar>
-            <h1 className='text-black text-center'>Coming soon...</h1>
+            <PricingBanner></PricingBanner>
+            <LogoDesign></LogoDesign>
         </div>
     );
 };
