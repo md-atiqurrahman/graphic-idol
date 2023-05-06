@@ -44,7 +44,7 @@ const ContactForm = () => {
 
     return (
         <section id='contacts' className='bg-[#d8edfe] pt-[100px] text-black pb-[120px]'>
-            <div className='pl-[15px] lg:pl-[120px] pr-[15px] lg:pr-[175px] flex items-start flex-col lg:flex-row gap-[53px] lg:gap-[210px]'>
+            <div className='text-container extra-large pl-[15px] lg:pl-[120px] pr-[15px] lg:pr-[175px]  flex-col lg:flex-row gap-[53px] lg:gap-[210px]'>
                 <div>
                     <h2 className='text-[46px] leading-[70px] font-bold'>Let's Chat</h2>
                     <p className='text-[22px] leading-[32px] font-normal'>We'd love to get to know you, discuss your needs, and create

@@ -51,7 +51,7 @@ const ClientsReviews = () => {
 
   return (
     <div className="text-center mb-[185px]">
-      <h1 className="text-black text-[46px] font-bold leading-[70px] mb-[50px]">
+      <h1 className="text-black text-[42px] lg:text-[46px] font-bold leading-[52px] lg:leading-[70px] mb-[50px]">
         What They Say About Graphic Idol
       </h1>
       <div className="flex flex-col items-center">
@@ -59,7 +59,7 @@ const ClientsReviews = () => {
           <button
             onClick={handlePrev}
             className="w-[38px] h-[38px] 
-                    border border-[#676767] rounded-[50px] text-lg text-[#676767] hover:text-gray-800 focus:outline-none absolute lg:relative z-[4] left-0"
+                    border border-[#676767] rounded-[50px] text-lg text-[#676767] hover:text-gray-800 focus:outline-none absolute lg:relative z-[5] left-0 md:relative"
           >
             <FontAwesomeIcon icon={faChevronLeft} />
           </button>
@@ -93,7 +93,7 @@ const ClientsReviews = () => {
           <button
             onClick={handleNext}
             className="w-[38px] h-[38px] 
-                    border border-[#676767] rounded-[50px] text-lg text-[#676767] hover:text-gray-800 focus:outline-none absolute lg:relative z-[5] right-0"
+                    border border-[#676767] rounded-[50px] text-lg text-[#676767] hover:text-gray-800 focus:outline-none absolute lg:relative z-[5] right-0 md:relative"
           >
             <FontAwesomeIcon icon={faChevronRight} />
           </button>

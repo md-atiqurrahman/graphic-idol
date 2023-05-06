@@ -6,12 +6,12 @@ import img3 from '../../../assets/images/OurSpeciality/result.png';
 const OurSpeciality = () => {
     return (
         <div className='text-center mb-[154px]'>
-            <h1 className="text-black text-[46px] font-bold leading-[70px] mb-[51px]">
+            <h1 className="text-black text-[46px] font-bold leading-[52px] lg:leading-[70px] mb-[51px]">
                 Why Our Clients Keep
                 <br />
                 Coming Back
             </h1>
-            <div className='flex justify-center items-center gap-[30px] flex-wrap'>
+            <div className='grid grid-cols-[350px] md:grid-cols-[350px_350px] lg:grid-cols-[350px_350px_350px] justify-center gap-[30px]'>
                 <div className="card w-[350px] h-[450px] bg-[#1e45c7] shadow-xl text-white rounded-[5px]">
                     <div className='flex justify-center items-center mt-[30px]'>
                         <img src={img1} alt="Communication" className="rounded-xl" />

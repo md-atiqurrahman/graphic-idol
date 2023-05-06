@@ -1,11 +1,25 @@
 input::placeholder {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 43px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 43px;
 }
 
 textarea::placeholder {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 27px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+}
+.text-container {
+  display: flex;
+  align-items: flex-start;
+  justify-items: center;
+}
+
+@media only screen and (min-width: 1441px) {
+  .extra-large {
+    padding-left: 300px;
+    padding-right: 350px;
+    flex-direction: row;
+    gap: 220px;
+  }
 }

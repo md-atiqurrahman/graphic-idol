@@ -34,11 +34,11 @@ function Navbar() {
             <Link to='/contact'>Contact</Link>
         </li>
     </React.Fragment>
-
+// 
 
     return (
-        <div className="navbar bg-primary text-white bg-opacity-90 py-2 pl-0 lg:pl-[120px] pr-0 lg:pr-[107px] pt-[30px] lg:pt-[36px]">
-            <div className="navbar-start pl-[15px] lg:pl-0">
+        <div className="navbar bg-primary text-white bg-opacity-[.96] lg:bg-opacity-90 py-2  pt-[30px] lg:pt-[36px] pl-0 lg:pl-[120px] pr-0 lg:pr-[107px]">
+            <div className="navbar-start  pl-[15px] lg:pl-0">
                 <Link to='/'><img src={logo} alt="Graphic Idol logo" /></Link>
             </div>
             <div className="navbar-end hidden lg:flex">

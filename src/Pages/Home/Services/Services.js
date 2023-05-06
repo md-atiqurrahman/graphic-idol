@@ -70,7 +70,7 @@ const Services = () => {
                     <p>surprisingly low price.</p>
                 </div>
             </div>
-            <div className='flex flex-row flex-wrap justify-center gap-[30px]'>
+            <div className='grid grid-cols-[350px] md:grid-cols-[350px_350px] lg:grid-cols-[350px_350px_350px] justify-center gap-[30px]'>
                 {
                     cards.map(card => <ServiceCard
                     key={card.id}

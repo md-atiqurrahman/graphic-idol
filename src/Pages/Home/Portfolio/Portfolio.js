@@ -45,7 +45,7 @@ const Portfolio = () => {
                 <p>We don't promise quality without proof. Browse our work</p>
                 <p>below to get an idea of what we can do.</p>
             </div>
-            <div className="mb-[55px] flex flex-row flex-wrap justify-center gap-[30px]">
+            <div className="mb-[55px] grid grid-cols-[350px] md:grid-cols-[350px_350px] lg:grid-cols-[350px_350px_350px] justify-center gap-[30px]">
                   {
                     images.map(image => <ImageFlipBox
                     key={image.id}
